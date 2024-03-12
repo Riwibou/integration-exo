@@ -29,9 +29,8 @@ h2 {
   flex-direction: row-reverse;
 }
 /* EXERCICE 3 */
-.exercice3 ul {
+.exercice3 > ul {
   display: flex;
-  justify-content: space-around;
 
 }
 
