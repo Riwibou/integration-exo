@@ -29,15 +29,55 @@ h2 {
   flex-direction: row-reverse;
 }
 /* EXERCICE 3 */
-.exercice3 > ul {
+.exercice3 ul {
   display: flex;
-
 }
 
+.exercice3 li {
+  flex: 1;
+}
 /* EXERCICE 4 */
+.exercice4 ul {
+  display: flex;
+  gap: 10px;
+}
+
+.exercice4 ul > li:nth-child(1),
+.exercice4 ul > li:nth-child(3) {
+  flex: 1;
+}
+
+.exercice4 ul > li:nth-child(2) {
+  flex:3;
+}
+
 
 /* EXERCICE 5 */
+.exercice5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exercice5 ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
 
 /* EXERCICE 6 */
+.exercice6 {
+  display: flex;
+  justify-content: center;
+}
 
 /* EXERCICE 7 */
+.exercice7 ul{
+  display: flex;
+  border-radius: 50%;
+  justify-content: space-around
+}
+
+.exercice7 li {
+  border-radius: 50%;
+}
