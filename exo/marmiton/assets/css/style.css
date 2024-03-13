@@ -48,41 +48,43 @@ h3 {
 /* header part */
 
 header {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: #ffffff;
   height: 80px;
   border-bottom: 1px solid #f3735f;
 }
 
 header > div.container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-top: 21px;
 }
 
 header img {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 200px;
 }
 
 /* =========== */
-
 /* main part */
 
 main {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-top: 50px;
 }
 
 section > p {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 12px;
   color:rgb(155, 153, 153);
   text-align: center;
   margin-bottom: 50px;
 }
 
+/* ============= */
+ /* main part : cooking container */
+
 .cooking-time {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color:  #8a98b1;
   width: 400px;
   text-align: center;
@@ -95,19 +97,55 @@ section > p {
   margin-bottom: 60px;
 }
 
+/* ============= */
+ /* main part : imgs*/
+
 .imgs-container {
- border: 1px solid red;
+ /* border: 1px solid red; */
  line-height: 0;
  margin-bottom: 50px;
 }
 
 .imgs-container img {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 300px;
   height: 300px;
   border-radius: 15px;
 }
 .imgs-container img:not(:last-child) {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-right: 30px;
 }
+
+/* ============= */
+ /* main part : ingredient*/
+
+.ingredients-container h2{
+  /* border: 1px solid red; */
+  margin-bottom: 50px;
+}
+ .ingredients-container li {
+  /* border: 1px solid red; */
+  list-style: disc;
+  font-size: 18px;
+  color:rgb(155, 153, 153);
+  margin-left: 15px;
+  margin-bottom: 10px;
+ }
+
+ /* ============= */
+ /* main part : ingredient*/
+
+ .preparation-container {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+ }
+
+  /* ============= */
+ /* footer part */
+
+ footer {
+  text-align: center;
+  padding: 10px;
+  color: #848484;
+ }
