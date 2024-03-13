@@ -103,8 +103,8 @@ section > p {
 
 .imgs-container img {
   border: 1px solid red;
-  width: 300;
-  height: 300;
+  width: 300px;
+  height: 300px;
   border-radius: 15px;
 }
 .imgs-container img:not(:last-child) {
