@@ -1,0 +1,134 @@
+body {
+  font-family: TS-Reg, sans-serif;
+}
+
+h1 {
+  font-family: TS-med;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: .15rem;
+}
+
+/* header */
+
+.navbar a i {
+  height: 20px;
+  width: 20px;
+}
+
+header {
+  height: 60px;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 143px;
+}
+
+.container-header .burger-menu {
+  display: none;
+}
+
+.container-header img {
+  width: 190px;
+  height: 40px;
+}
+
+.logo {
+  display: flex;
+  width: 25%;
+}
+
+.navbar {
+  display: flex;
+  width: 52%;
+}
+
+.navbar i {
+  font-size: 20px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 95px;
+  margin-right: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item span {
+  margin-left: 5px;
+}
+
+.nav-item .btn {
+  padding: 20px;
+  width: 120px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+
+}
+
+/* ================== */
+
+/* main */
+
+.container-main {
+  flex-wrap: nowrap;
+  margin: 30px 143px;
+}
+
+.container-main .title {
+  width: 100%;
+}
+
+.container-main .title h1 .title-red {
+  color: orangered;
+
+}
+
+.title p {
+  font-size: 14px;
+}
+
+.title p a {
+  color: black;
+}
+
+.badges {
+  width: 1094px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  margin: 38px 0;
+}
+
+.badge {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  min-width: 15.5%;
+  min-height: 60px;
+  border: black solid 1px;
+  border-radius: 12px;
+  align-items: center;
+  margin-right: 12.5px;
+}
+
+.badge-txt {
+  display: flex;
+  align-items: start;
+}
+
+.badge-icon {
+  justify-content: center;
+  align-items: center;
+}
