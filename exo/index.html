@@ -1,177 +1,1001 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tripadvisor Riwibou</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/fonts.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/webfonts/all.css">
-  <script
-      src="https://kit.fontawesome.com/17e68e704c.js"
-      crossorigin="anonymous">
-  </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tripadvisor Riwibou</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script type="text/javascript" src="./assets/script.js"></script>
+  </head>
+  <body>
+    <header class="container-header">
+      <div class="burger-menu">
+        <img
+          class="logo-svg"
+          src="./assets/img/svg/bars-solid.svg"
+          alt="logo"
+        />
+      </div>
+      <div class="logo">
+        <img src="./assets/img/svg/Tripadvisor_logo.svg" alt="logo" />
+      </div>
+      <div class="navbar">
+        <ul>
+          <li class="nav-item one">
+            <a href="">
+              <img
+                class="logo-svg"
+                src="./assets/img/svg/pencil.svg"
+                alt="logo"
+              />
+              <span>Avis</span>
+            </a>
+          </li>
 
-</head>
-<body>
+          <li class="nav-item two">
+            <a href="">
+              <img src="./assets/img/svg/heart.svg" alt="logo" />
+              <span>Voyages</span>
+            </a>
+          </li>
 
-<header class="container-header">
-  <div class="burger-menu">
-    <i class="fa-solid fa-bars"></i>
-  </div>
-  <div class="logo">
-    <img src="./assets/pictures/Tripadvisor_logo.svg" alt="logo" />
-  </div>
-  <div class="navbar">
+          <li class="nav-item three">
+            <a href="">
+              <img src="./assets/img/svg/bell.svg" alt="logo" />
+              <span>Alertes</span>
+            </a>
+          </li>
 
-    <div class="nav-item">
-      <a href="">
-        <i class="fa fa-pencil"></i>
-        <span>Avis</span>
-      </a>
-    </div>
+          <li class="nav-item four">
+            <a href="" class="black-btn" id="btnConnect"> Connectez-vous </a>
+          </li>
 
-    <div class="nav-item">
-      <a href="">
-        <i class="fa-regular fa-heart"></i>
-        <span>Voyages</span>
-      </a>
-    </div>
+          <li class="nav-item five">
+            <a href="">
+              <img src="./assets/img/svg/cart.svg" alt="logo" />
+              <span>Panier</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-    <div class="nav-item">
-      <a href="">
-        <i class="fa-regular fa-bell"></i>
-        <span>Alertes</span>
-      </a>
-    </div>
+    <main class="container-main">
+      <div class="title">
+        <h1><span class="title-red">Explorez</span> Paris</h1>
+        <p>
+          Les revenus influencent le choix des expériences présentées sur cette
+          page : <a href="">en savoir plus</a>.
+        </p>
+      </div>
+      <div class="badges">
+        <div class="badge">
+          <div class="badge-txt"><p>Hôtels</p></div>
 
-    <div class="nav-item">
-      <a href="" class="btn">
-        Connectez-vous
-      </a>
-    </div>
+          <div class="badge-icon">
+            <svg
+              width="21"
+              height="17"
+              viewBox="0 0 21 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.2459 8.33594C20.1991 9.10156 20.6756 10.0859 20.6756 11.2891V16.0469H18.7538V14.1484H2.58188V16.0469H0.660004V11.2891C0.660004 10.0703 1.13657 9.08594 2.08969 8.33594V0.34375H19.2459V8.33594ZM17.3475 2.24219H3.98813V5.00781C4.8475 4.42969 5.80063 4.14062 6.8475 4.14062C8.42563 4.14062 9.69907 4.72656 10.6678 5.89844C11.6366 4.72656 12.91 4.14062 14.4881 4.14062C15.5506 4.14062 16.5038 4.4375 17.3475 5.03125V2.24219ZM17.0897 7.49219C16.8709 7.07031 16.5272 6.72656 16.0584 6.46094C15.5897 6.19531 15.0663 6.0625 14.4881 6.0625C13.91 6.0625 13.3944 6.1875 12.9413 6.4375C12.4725 6.70312 12.1209 7.04688 11.8866 7.46875H16.8553C16.8866 7.46875 16.9256 7.46875 16.9725 7.46875C17.0194 7.48438 17.0584 7.49219 17.0897 7.49219ZM9.44907 7.46875C9.21469 7.04688 8.87094 6.71094 8.41782 6.46094C7.94907 6.19531 7.42563 6.0625 6.8475 6.0625C6.26938 6.0625 5.74594 6.19531 5.27719 6.46094C4.80844 6.72656 4.46469 7.07031 4.24594 7.49219C4.27719 7.49219 4.31625 7.49219 4.36313 7.49219C4.42563 7.47656 4.46469 7.46875 4.48032 7.46875H9.44907ZM2.58188 12.2266H18.7538V11.2891C18.7538 10.7578 18.5741 10.3125 18.2147 9.95312C17.8397 9.57812 17.3866 9.39062 16.8553 9.39062H4.48032C3.94907 9.39062 3.50375 9.57031 3.14438 9.92969C2.76938 10.3047 2.58188 10.7578 2.58188 11.2891V12.2266Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="badge">
+          <div class="badge-txt"><p>Locations de vacances</p></div>
 
-    <div class="nav-item">
-      <a href="">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <span>Panier</span>
-      </a>
-    </div>
-  </div>
-</header>
+          <div class="badge-icon">
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.7241 0.1875L20.6381 6.79688V20.2031H0.809998V6.79688L10.7241 0.1875ZM18.6459 18.2109V7.85156L10.7241 2.57812L2.80219 7.85156V18.2109H18.6459ZM7.77094 8.8125C8.41156 8.8125 8.98187 9 9.48187 9.375C9.98187 9.75 10.3334 10.2266 10.5366 10.8047H16.6537V12.7734H14.685V14.7656H12.6928V12.7734H10.5366C10.3334 13.3516 9.98187 13.8281 9.48187 14.2031C8.98187 14.5781 8.41156 14.7656 7.77094 14.7656C6.95844 14.7656 6.26312 14.4766 5.685 13.8984C5.09125 13.3203 4.79437 12.6172 4.79437 11.7891C4.79437 10.9609 5.08344 10.2578 5.66156 9.67969C6.25531 9.10156 6.95844 8.8125 7.77094 8.8125ZM7.77094 12.7734C8.03656 12.7734 8.26312 12.6797 8.45062 12.4922C8.65375 12.3047 8.75531 12.0703 8.75531 11.7891C8.75531 11.5234 8.66156 11.2969 8.47406 11.1094C8.27094 10.9062 8.03656 10.8047 7.77094 10.8047C7.48969 10.8047 7.25531 10.8984 7.06781 11.0859C6.86469 11.2891 6.76312 11.5234 6.76312 11.7891C6.76312 12.0703 6.85687 12.3047 7.04437 12.4922C7.2475 12.6797 7.48969 12.7734 7.77094 12.7734Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="badge">
+          <div class="badge-txt"><p>Activités</p></div>
 
-<main class="container-main">
-  <div class="title">
-    <h1><span class="title-red">Explorez</span> Paris</h1>
-    <p>Les revenus influencent le choix des expériences présentées sur cette page :
-      <a href="">en savoir plus</a>.</p>
-  </div>
-  <div class="badges">
-    <div class="badge">
-      <div class="badge-txt"></div>
-      <p>Hôtels</p>
-      <div class="badge-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
+          <div class="badge-icon">
+            <svg
+              width="21"
+              height="16"
+              viewBox="0 0 21 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.97 4.70312C9.97 4.42188 10.0638 4.1875 10.2513 4C10.4544 3.79688 10.6966 3.69531 10.9778 3.69531C11.2591 3.69531 11.4934 3.78906 11.6809 3.97656C11.8841 4.17969 11.9856 4.42188 11.9856 4.70312C11.9856 4.96875 11.8919 5.19531 11.7044 5.38281C11.5013 5.58594 11.2591 5.6875 10.9778 5.6875C10.6966 5.6875 10.4622 5.59375 10.2747 5.40625C10.0716 5.20312 9.97 4.96875 9.97 4.70312ZM9.97 8.19531C9.97 7.91406 10.0638 7.67969 10.2513 7.49219C10.4544 7.28906 10.6966 7.1875 10.9778 7.1875C11.2591 7.1875 11.4934 7.28125 11.6809 7.46875C11.8841 7.67188 11.9856 7.91406 11.9856 8.19531C11.9856 8.46094 11.8919 8.6875 11.7044 8.875C11.5013 9.07812 11.2591 9.17969 10.9778 9.17969C10.6966 9.17969 10.4622 9.08594 10.2747 8.89844C10.0716 8.69531 9.97 8.46094 9.97 8.19531ZM9.97 11.6875C9.97 11.4219 10.0638 11.1953 10.2513 11.0078C10.4544 10.8047 10.6966 10.7031 10.9778 10.7031C11.2591 10.7031 11.4934 10.7969 11.6809 10.9844C11.8841 11.1875 11.9856 11.4219 11.9856 11.6875C11.9856 11.9688 11.8919 12.2031 11.7044 12.3906C11.5013 12.5938 11.2591 12.6953 10.9778 12.6953C10.6966 12.6953 10.4622 12.6016 10.2747 12.4141C10.0716 12.2109 9.97 11.9688 9.97 11.6875ZM18.97 2.71094H2.98563V4.16406C3.73563 4.53906 4.33719 5.08594 4.79031 5.80469C5.24344 6.53906 5.47 7.33594 5.47 8.19531C5.47 9.07031 5.24344 9.86719 4.79031 10.5859C4.33719 11.3047 3.73563 11.8516 2.98563 12.2266V13.6797H18.97V12.2266C18.22 11.8516 17.6184 11.3047 17.1653 10.5859C16.7122 9.86719 16.4856 9.07031 16.4856 8.19531C16.4856 7.33594 16.7122 6.54688 17.1653 5.82812C17.6184 5.09375 18.22 4.53906 18.97 4.16406V2.71094ZM20.9856 0.695312V5.71094C20.2981 5.71094 19.7122 5.95312 19.2278 6.4375C18.7278 6.92188 18.4778 7.50781 18.4778 8.19531C18.4778 8.88281 18.72 9.46875 19.2044 9.95312C19.7044 10.4531 20.2981 10.7031 20.9856 10.7031V15.6953H0.970001V10.7031C1.6575 10.7031 2.24344 10.4609 2.72781 9.97656C3.22781 9.47656 3.47781 8.88281 3.47781 8.19531C3.47781 7.50781 3.23563 6.92188 2.75125 6.4375C2.25125 5.95312 1.6575 5.71094 0.970001 5.71094V0.695312H20.9856Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="badge">
+          <div class="badge-txt"><p>Restaurants</p></div>
+
+          <div class="badge-icon">
+            <svg
+              width="21"
+              height="20"
+              viewBox="0 0 21 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.9503 12.5859L18.6222 18.2578L17.2862 19.5938L11.6143 13.9219L8.8956 16.6406L7.23154 15L2.61435 19.6172L1.27841 18.2812L5.8956 13.6641L1.23154 9C0.497162 8.26562 0.129974 7.375 0.129974 6.32812C0.129974 5.29688 0.497162 4.41406 1.23154 3.67969L2.61435 2.27344L9.97372 9.60938L10.3253 9.25781C9.91904 8.63281 9.71591 7.91406 9.71591 7.10156C9.71591 5.97656 10.1143 5.01562 10.9112 4.21875L14.3565 0.773438L15.6925 2.10938L12.2472 5.55469C11.8097 5.97656 11.5909 6.49219 11.5909 7.10156C11.5909 7.36719 11.6378 7.61719 11.7315 7.85156L16.6534 2.92969L17.9893 4.26562L12.9268 9.30469C13.2081 9.53906 13.4581 9.6875 13.6768 9.75C13.7393 9.78125 13.8175 9.79688 13.9112 9.79688C14.1143 9.79688 14.3253 9.6875 14.544 9.46875L18.8097 5.20312L20.1456 6.53906L15.88 10.8047C15.2862 11.3984 14.6378 11.6953 13.9347 11.6953C13.7159 11.6953 13.4347 11.6484 13.0909 11.5547C12.6222 11.3984 12.1222 11.0938 11.5909 10.6406L11.3097 10.9453L12.9503 12.5859ZM8.8956 13.9922L10.2784 12.5859L2.63779 4.94531L2.56747 4.99219C2.2081 5.38281 2.02841 5.83594 2.02841 6.35156C2.02841 6.86719 2.2081 7.30469 2.56747 7.66406L8.8956 13.9922Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="badge">
+          <div class="badge-txt"><p>Forums de voyage</p></div>
+
+          <div class="badge-icon">
+            <svg
+              width="21"
+              height="20"
+              viewBox="0 0 21 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.279999 19.4531V4.94531H16.3112L16.2878 16.4531H5.67062L2.41281 19.4531H0.279999ZM2.29562 6.9375V16.8516L4.89719 14.4609H14.2722L14.2956 6.9375H2.29562ZM5.29562 0.9375H20.2956V11.4609H18.28V2.92969H5.29562V0.9375Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="badge">
+          <div class="badge-txt"><p>Vols</p></div>
+
+          <div class="badge-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20"
+              width="22.5"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="badge">
+          <div class="badge-txt"><p>Croisières</p></div>
+
+          <div class="badge-icon">
+            <svg
+              width="64px"
+              height="64px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M4 17.5L3 12L12 9L21 12L20 17.5M5 11.3333V7C5 5.89543 5.89543 5 7 5H17C18.1046 5 19 5.89543 19 7V11.3333M10 5V3C10 2.44772 10.4477 2 11 2H13C13.5523 2 14 2.44772 14 3V5M2 21C3 22 6 22 8 20C10 22 14 22 16 20C18 22 21 22 22 21"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="badge last">
+          <div class="badge-txt"><p>Plus</p></div>
+
+          <div class="badge-icon">
+            <svg
+              width="21"
+              height="6"
+              viewBox="0 0 21 6"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.440033 3.10156C0.440033 2.41406 0.68222 1.82812 1.1666 1.34375C1.6666 0.84375 2.26035 0.59375 2.94785 0.59375C3.63535 0.59375 4.22128 0.835938 4.70566 1.32031C5.20566 1.82031 5.45566 2.41406 5.45566 3.10156C5.45566 3.78906 5.21347 4.375 4.7291 4.85938C4.2291 5.34375 3.63535 5.58594 2.94785 5.58594C2.26035 5.58594 1.67441 5.34375 1.19003 4.85938C0.690033 4.375 0.440033 3.78906 0.440033 3.10156ZM15.44 3.10156C15.44 2.41406 15.6822 1.82812 16.1666 1.34375C16.6666 0.84375 17.2603 0.59375 17.9478 0.59375C18.6353 0.59375 19.2213 0.835938 19.7057 1.32031C20.2057 1.82031 20.4557 2.41406 20.4557 3.10156C20.4557 3.78906 20.2135 4.375 19.7291 4.85938C19.2291 5.34375 18.6353 5.58594 17.9478 5.58594C17.2603 5.58594 16.6744 5.34375 16.19 4.85938C15.69 4.375 15.44 3.78906 15.44 3.10156ZM7.94003 3.10156C7.94003 2.41406 8.18222 1.82812 8.6666 1.34375C9.1666 0.84375 9.76035 0.59375 10.4478 0.59375C11.1353 0.59375 11.7213 0.835938 12.2057 1.32031C12.7057 1.82031 12.9557 2.41406 12.9557 3.10156C12.9557 3.78906 12.7135 4.375 12.2291 4.85938C11.7291 5.34375 11.1353 5.58594 10.4478 5.58594C9.76035 5.58594 9.17441 5.34375 8.69003 4.85938C8.19003 4.375 7.94003 3.78906 7.94003 3.10156Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-left">
+          <div class="little-badge">
+            <div class="x-small">
+              <img src="./assets/img/svg/photo.svg" alt="logo" />
+            </div>
+            <span>Toutes les photos</span>
+          </div>
+        </div>
+        <div class="gallery-right">
+          <div class="right-sup"></div>
+          <div class="right-inf"></div>
+        </div>
+      </div>
+      <div class="inter-txt">
+        <div class="breadcrumb">
+          <span>Europe</span>
+          <img src="./assets/img/svg/vector.svg" alt="logo" />
+          <span>France</span>
+          <img src="./assets/img/svg/vector.svg" alt="logo" />
+          <span>Île-de-France</span>
+          <img src="./assets/img/svg/vector.svg" alt="logo" />
+
+          <span>Paris</span>
+          <img src="./assets/img/svg/caret.svg" alt="logo" />
+        </div>
+
+        <div class="legend">
+          <p>Visiter : Paris</p>
+        </div>
+      </div>
+      <div class="city">
+        <div class="city-left">
+          <h2>La Ville Lumière éblouit en tous points</h2>
+          <p>
+            Aucun autre endroit au monde ne fait autant rêver que Paris. La
+            ville séduit par son art, son architecture, sa culture et sa
+            cuisine, mais il y a aussi des merveilles plus discrètes qui
+            n&apos;attendent qu&apos;à être explorées : les ruelles pavées
+            pittoresques, les pâtisseries au coin de la rue et les petits
+            bistrots douillets qui vous invitent à boire un verre de beaujolais.
+            Préparez-vous à vous approprier Paris.
+          </p>
+        </div>
+        <div class="city-right">
+          <div class="city-travel">
+            <h3>Paris : commencez à organiser !</h3>
+            <p>
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <a class="create" href="">Créez un voyage</a>
+          </div>
+          <div class="city-map"></div>
+        </div>
+      </div>
+
+      <div class="activities">
+        <h4 class="activities-title">Paris : les immanquables</h4>
+        <div class="monuments">
+          <div class="monuments-text">
+            <h5>Se divertir</h5>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques à Paris.
+            </p>
+            <a class="grey" href="">Tout afficher</a>
+          </div>
+          <div class="monuments-caroussel">
+            <div class="card-caroussel">
+              <div class="card-caroussel-header mon-one">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Tour Eiffel</h6></a>
+                <div class="notation">
+                  <div class="total">
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/mid-circle.svg"
+                    />
+                  </div>
+                  <span>139 901</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  Tours et plateformes d'observation, Monuments /& Points
+                  d'intérêt
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header mon-two">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Arc de Triomphe</h6></a>
+                <div class="notation">
+                  <div class="total">
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/empty-circle.svg"
+                    />
+                  </div>
+                  <span>56 987</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  Bâtiments architecturaux, Sites historiques
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header mon-three">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Musée du Louvre</h6></a>
+                <div class="notation">
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img
+                    class="circle-note"
+                    src="./assets/img/svg/mid-circle.svg"
+                  />
+                  <span>100 845</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  Bâtiments architecturaux, Musées d&apos;art d&apos;intérêt
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header mon-four">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Musée Rodin</h6></a>
+                <div class="notation">
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img
+                    class="circle-note"
+                    src="./assets/img/svg/mid-circle.svg"
+                  />
+                  <span>187 981</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">Musées spécialisés</p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header mon-five">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Notre-Dame de Paris</h6></a>
+                <div class="notation">
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <span>139 901</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  Bâtiments architecturaux, Sites historiques
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header mon-six">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Librairie Shakespear and Company</h6></a>
+                <div class="notation">
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <span>140 321</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  Bibliothèques, Grands magasins.
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header mon-seven">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Musée d&apos;Orsay</h6></a>
+                <div class="notation">
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <span>67 761</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">Musées d&apos;art.</p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header mon-eight">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Marché aux Puces de Saint-Ouen</h6></a>
+                <div class="notation">
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img class="circle-note" src="./assets/img/svg/circle.svg" />
+                  <img
+                    class="circle-note"
+                    src="./assets/img/svg/mid-circle.svg"
+                  />
+                  <span>103 495</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  Antiquaires, Marchés aux puces /& Marchés de rue<br />Saint-Ouen<br />France
+                  à 5,4 kilomètres de Paris
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="restaurants">
+          <div class="restaurants-text">
+            <h5>Se restaurer</h5>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+            <a class="grey" href="">Tout afficher</a>
+          </div>
+          <div class="restaurants-caroussel">
+            <div class="card-caroussel">
+              <div class="card-caroussel-header rest-one">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Frenchie</h6></a>
+                <div class="notation">
+                  <div class="total">
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/empty-circle.svg"
+                    />
+                  </div>
+                  <span>1 297</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  €€€€ · Française, Végétariens bienvenus, Plats sans gluten
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header rest-two">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>114 Faubourg</h6></a>
+                <div class="notation">
+                  <div class="total">
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/mid-circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/empty-circle.svg"
+                    />
+                  </div>
+                  <span>1 754</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  €€ · Française, Européenne, Végétariens bienvenus
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header rest-three">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Verjus</h6></a>
+                <div class="notation">
+                  <div class="total">
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/empty-circle.svg"
+                    />
+                  </div>
+                  <span>545</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  €€€ · Française, Européenne, Moderne
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header rest-four">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>ASPIC</h6></a>
+                <div class="notation">
+                  <div class="total">
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/mid-circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/empty-circle.svg"
+                    />
+                  </div>
+                  <span>2 981</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  €€€€ · Française, Européenne, Saine
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header rest-five">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Bistrot chic</h6></a>
+                <div class="notation">
+                  <div class="total">
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/mid-circle.svg"
+                    />
+                  </div>
+                  <span>1 345</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  €€€ · Française, Européenne, Saine, Moderne
+                </p>
+              </div>
+            </div>
+            <div class="card-caroussel">
+              <div class="card-caroussel-header rest-six">
+                <div class="card-caroussel-header-left">
+                  <div class="trip-year">
+                    <img class="trip-oscar" src="./assets/img/svg/owl.svg" />
+                    <p class="trip-text">2022</p>
+                  </div>
+                </div>
+                <div class="card-caroussel-header-right">
+                  <div class="trip-like">
+                    <img
+                      class="trip-like-img"
+                      src="./assets/img/svg/heart.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-caroussel-body">
+                <a href=""><h6>Vive les huîtres</h6></a>
+                <div class="notation">
+                  <div class="total">
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                    <img
+                      class="circle-note"
+                      src="./assets/img/svg/circle.svg"
+                    />
+                  </div>
+                  <span>4 340</span>
+                </div>
+              </div>
+              <div class="card-caroussel-footer">
+                <p class="card-caroussel-text">
+                  €€€€ · Française, Moderne, Bar à vins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide">
+          <h4 class="guide-title">Guides de voyageurs</h4>
+          <div class="guide-caroussel">
+            <div class="card-guide">
+              <div class="card-guide-header guide-one"></div>
+              <div class="card-guide-body">
+                <h6 class="title-guide">
+                  Best summer things to do in Paris | Eatwith
+                </h6>
+                <p class="guide-articles">36 articles</p>
+              </div>
+              <div class="card-guide-footer">
+                <img src="./assets/img/forks-icon.png" alt="logo-icon" />
+                <span class="from">Par Eatwith</span>
+              </div>
+            </div>
+            <div class="card-guide">
+              <div class="card-guide-header guide-two"></div>
+              <div class="card-guide-body">
+                <h6 class="title-guide">
+                  Les 10 monuments et musées de Paris à faire
+                </h6>
+                <p class="guide-articles">10 articles</p>
+              </div>
+              <div class="card-guide-footer">
+                <img src="./assets/img/topito-com.png" alt="logo-icon" />
+                <span class="from">Par Topito</span>
+              </div>
+            </div>
+            <div class="card-guide">
+              <div class="card-guide-header guide-three"></div>
+              <div class="card-guide-body">
+                <h6 class="title-guide">
+                  Top 10 des choses à faire ou à voir dans le 14ème
+                </h6>
+                <p class="guide-articles">10 articles</p>
+              </div>
+              <div class="card-guide-footer">
+                <img src="./assets/img/topito-com.png" alt="logo-icon" />
+                <span class="from">Par Topito</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="logo-footer">
+        <img src="./assets/img/svg/favicon-tripadvisor.svg" id="rotate" />
+        <p>
+          Made at <a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a>
+          by <a href="https://github.com/Riwibou" target="_blank">Riwibou</a>
+        </p>
+      </div>
+    </footer>
+    <div class="hidden modal">
+      <div class="form-container">
+        <div>
+          <img id="close" src="./assets/img/svg/close.svg" />
+          <p>Formulaire de contact</p>
+          <form id="contact">
+            <input id="firstname" name="firstname" placeholder="Prénom" />
+            <input id="lastname" name="lastname" placeholder="Nom" />
+            <input id="email" name="email" placeholder="Email" type="email" />
+            <textarea
+              cols="50"
+              id="message"
+              name="message"
+              placeholder="Écrivez ici votre message..."
+              rows="5"
+            ></textarea>
+            <input
+              id="submit-btn"
+              type="submit"
+              value="Envoyer le formulaire"
+            />
+          </form>
+        </div>
       </div>
     </div>
-    <div class="badge">
-      <div class="badge-txt"></div>
-      <p>Locations de vacances</p>
-      <div class="badge-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-    <div class="badge">
-      <div class="badge-txt"></div>
-      <p>Activités</p>
-      <div class="badge-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-    <div class="badge">
-      <div class="badge-txt"></div>
-      <p>Restaurants</p>
-      <div class="badge-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-    <div class="badge">
-      <div class="badge-txt"></div>
-      <p>Forums de voyage</p>
-      <div class="badge-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-    <div class="badge">
-      <div class="badge-txt"></div>
-      <p>Vols</p>
-      <div class="badge-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-    <div class="badge">
-      <div class="badge-txt"></div>
-      <p>Croisières</p>
-      <div class="badge-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-    <div class="badge">
-      <div class="badge-txt"></div>
-      <p>Plus</p>
-      <div class="badge-icon">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-  </div>
-  <div class="gallery">
-  </div>
-  <div class="breadcrumb">
-  </div>
-  <div class="city">
-    <div class="city-left"></div>
-    <div class="city-right"></div>
-      <div class="city-travel"></div>
-      <div class="city-map"></div>
-  </div>
-
-  <div class="activities">
-    <div class="monuments">
-      <div class="monuments-text"></div>
-      <div class="monuments-carouss"></div>
-    </div>
-    <div class="restaurants">
-      <div class="restaurants-text"></div>
-      <div class="restaurants-carouss"></div>
-    </div>
-  </div>
-
-  <div class="guide">
-    <div class="card">
-      <div class="card-header"></div>
-      <div class="card-body"></div>
-      <div class="card-footer"></div>
-    </div>
-    <div class="card">
-      <div class="card-header"></div>
-      <div class="card-body"></div>
-      <div class="card-footer"></div>
-    </div>
-    <div class="card">
-      <div class="card-header"></div>
-      <div class="card-body"></div>
-      <div class="card-footer"></div>
-    </div>
-  </div>
-
-</main>
-
-<footer>
-  <div class="logo-footer">
-
-  </div>
-</footer>
-
-</body>
+  </body>
 </html>

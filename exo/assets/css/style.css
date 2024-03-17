@@ -1,80 +1,110 @@
 body {
   font-family: TS-Reg, sans-serif;
-}
-
-h1 {
-  font-family: TS-med;
-  font-size: 50px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  letter-spacing: .15rem;
+  margin: 0 auto;
 }
 
 /* header */
 
-.navbar a i {
-  height: 20px;
-  width: 20px;
-}
-
 header {
   height: 60px;
+  background-color: #fff;
 }
 
 .container-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 143px;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .container-header .burger-menu {
   display: none;
 }
 
-.container-header img {
+.container-header .logo img {
   width: 190px;
   height: 40px;
+  padding-left: 10px;
 }
 
 .logo {
-  display: flex;
-  width: 25%;
+  width: 300px;
 }
 
 .navbar {
-  display: flex;
-  width: 52%;
+  width: 560px;
+  height: 40px;
 }
 
-.navbar i {
-  font-size: 20px;
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start; /* Distribute items evenly */
+  align-items: center; /* Align items vertically */
+  height: 100%; /* Fill the entire height of the navbar */
 }
 
-.nav-item {
+.navbar ul li.nav-item {
   display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 95px;
-  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.nav-item a:hover {
+  background-color: #d4d4d4bb;
+  border-radius: 20px;
+}
+
+.nav-item a:hover.black-btn {
+  background-color: #353535bb;
+  border-radius: 20px;
+}
+
+.nav-item.one {
+  width: 77.27px;
+  margin-right: 8px;
+}
+.nav-item.two img {
+  margin-right: 4px;
+}
+
+.nav-item.two {
+  width: 112.38px;
+  margin-right: 8px;
+}
+.nav-item.three {
+  width: 99.5px;
+  margin-right: 24px;
+}
+.nav-item.four {
+  width: 150px;
+}
+.nav-item.five {
+  width: 95.53px;
+}
+.nav-item.five img {
+  margin-right: 4px;
 }
 
 .nav-item a {
+  display: flex;
   text-decoration: none;
   color: black;
+  padding: 8px 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
 }
-
-.nav-item span {
-  margin-left: 5px;
+.navbar .nav-item a img {
+  height: 24px;
+  width: 24px;
 }
-
-.nav-item .btn {
-  padding: 20px;
+a.black-btn {
   width: 120px;
   border-radius: 20px;
   background-color: black;
   color: white;
-
+  padding: 10px 8px;
 }
 
 /* ================== */
@@ -82,17 +112,25 @@ header {
 /* main */
 
 .container-main {
-  flex-wrap: nowrap;
-  margin: 30px 143px;
+  width: 1100px;
+  height: 2569px;
+  margin: 90px auto;
 }
 
 .container-main .title {
-  width: 100%;
+  min-width: 1100px;
+  padding-left: 12px;
 }
 
+.container-main .title h1 {
+  font-family: TS-med;
+  font-size: 54px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+}
 .container-main .title h1 .title-red {
-  color: orangered;
-
+  color: #ff5d5d;
 }
 
 .title p {
@@ -104,31 +142,648 @@ header {
 }
 
 .badges {
-  width: 1094px;
+  width: 1090px;
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: hidden;
-  margin: 38px 0;
+  justify-content: space-between;
+  margin-top: 33px;
+  margin-bottom: 22px;
+  padding: 0 12px;
+}
+
+.badges > :is(.badge:nth-child(6), .badge:nth-child(7)) {
+  display: none;
 }
 
 .badge {
   display: flex;
-  justify-content: space-between;
   flex-wrap: nowrap;
-  min-width: 15.5%;
-  min-height: 60px;
+  width: 159px;
+  height: 50px;
   border: black solid 1px;
-  border-radius: 12px;
+  border-radius: 14px;
   align-items: center;
-  margin-right: 12.5px;
+  margin-right: 10px;
+  padding-top: 13px;
+  padding-left: 13px;
+}
+
+.badge:hover {
+  color: white;
+  background-color: black;
 }
 
 .badge-txt {
-  display: flex;
-  align-items: start;
+  width: 118px;
+  height: 100%;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 .badge-icon {
+  width: 52px;
+  height: 100%;
+}
+.badge-icon svg {
+  margin-left: 8px;
+}
+.badge .badge-icon svg {
+  fill: black;
+}
+.badge:hover .badge-icon svg {
+  fill: white;
+}
+
+.small {
+  width: 21px;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  padding-left: 10px;
+  gap: 2px;
+}
+.gallery-left {
+  width: 613px;
+  height: 430px;
+  gap: 2px;
+  background-image: url(../img/paris-quai.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+.img-left {
+  width: 623px;
+  height: 430px;
+}
+
+.gallery-right {
+  width: 480px;
+  height: 428px;
+}
+
+.right-sup {
+  width: 480px;
+  height: 214px;
+  background-image: url(../img/paris-scooter.jpg);
+  background-size: cover;
+  background-position: center 46%;
+  margin-bottom: 2px;
+}
+
+.right-inf {
+  width: 480px;
+  height: 214px;
+  background-image: url(../img/paris-eiffel.jpg);
+  background-size: cover;
+  background-position: center 46%;
+}
+
+.little-badge {
+  display: flex;
+  vertical-align: middle;
+  padding: 10px 8px;
+  margin-left: 15px;
+  margin-top: 380px;
+  width: 112px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+}
+
+.x-small svg {
+  width: 10px;
+  height: auto;
+}
+.little-badge span {
+  margin-left: 4px;
+}
+
+.inter-txt {
+  margin-top: 26px;
+  margin-left: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumb {
+  width: 613px;
+}
+
+.breadcrumb img {
+  margin: 0 6px;
+}
+
+.city {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+}
+
+.city-left {
+  padding-left: 10px;
+  width: 600px;
+  height: 472px;
+}
+
+.city-left h2 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: bold;
+  margin-bottom: 34px;
+}
+
+.city-left p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 560px;
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+
+.city-right {
+  width: 424.5px;
+  height: 472px;
+  margin-left: 20px;
+}
+
+.city-travel {
+  height: 282px;
+  width: 424.5px;
+  background-color: #ff5d5d;
+  border-radius: 15px 15px 0 0;
+}
+.create:hover {
+  background: rgba(0, 0, 0, 0.726);
+}
+
+.city-travel h3 {
+  font-size: 32px;
+  line-height: 40px;
+  color: black;
+  font-weight: bold;
+  padding-top: 34px;
+  padding-left: 34px;
+  margin-bottom: 20px;
+}
+.city-travel p {
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  margin-left: 34px;
+  width: 380px;
+  margin-bottom: 40px;
+}
+.city-travel a {
+  width: 154px;
+  height: 54px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 19px 16px;
+  border-radius: 15px;
+  margin-left: 34px;
+}
+
+.city-map {
+  width: 427.5px;
+  height: 190px;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  background-position: center 46%;
+}
+
+.activities {
+  margin-top: 80px;
+  margin-left: 10px;
+}
+
+.activities-title {
+  font-family: "TS-Med";
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.1px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.monuments,
+.restaurants {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurants {
+  margin-top: 40px;
+}
+
+.monuments-text,
+.restaurants-text {
+  width: 254px;
+  height: 328px;
+}
+
+.monuments-caroussel,
+.restaurants-caroussel,
+.guide-caroussel {
+  width: 799px;
+  height: 328px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.monuments-text h5,
+.restaurants-text h5 {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.monuments-text p,
+.restaurants-text p {
+  font-family: "Georgia";
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 22px;
+}
+
+.grey {
+  color: #545454;
+  font-weight: bold;
+}
+
+.card-caroussel {
+  width: 256px;
+  height: 328px;
+  margin-right: 12px;
+}
+
+.card-caroussel-header {
+  width: 260px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  transition: filter 0.3s ease;
+}
+.mon-one {
+  background-image: url(../img/eiffeltoren.jpg);
+}
+.card-caroussel-header:hover {
+  opacity: 0.8; /* Apply transparency on hover */
+}
+
+.mon-two {
+  background-image: url(../img/arc-de-triomphe-at-night.jpg);
+}
+.mon-three {
+  background-image: url(../img/louvre.jpg);
+}
+.mon-four {
+  background-image: url(../img/vue-de-la-cour-d-honneur.jpg);
+}
+.mon-five {
+  background-image: url(../img/the-amazingly-detailed.jpg);
+}
+.mon-six {
+  background-image: url(../img/the-bookstore.jpg);
+}
+.mon-seven {
+  background-image: url(../img/20180601-122841-largejpg.jpg);
+}
+.mon-eight {
+  background-image: url(../img/marche-vernaison-maison.jpg);
+}
+
+.card-caroussel-header-left {
+  width: 120px;
+  height: 190px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+.card-caroussel-header-right {
+  width: 138px;
+  height: 190px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+}
+.trip-year {
+  border-radius: 20px 20px 5px 5px;
+  background-color: #2fd999;
+  padding: 3px 4px;
+  margin-bottom: 6px;
+  margin-left: 14px;
+}
+.trip-text {
+  margin-top: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.trip-like {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.trip-like-img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-caroussel-body {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.card-caroussel-body a {
+  text-decoration: none;
+}
+.card-caroussel-body a h6 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  color: black;
+}
+.card-caroussel-body .notation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+.card-caroussel-body .notation span {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.total {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+}
+.card-caroussel-footer p {
+  margin-top: 8px;
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-block-end: 0em;
+  width: 260px;
+}
+
+.rest-one {
+  background-image: url(../img/meal6.jpg);
+}
+.rest-two {
+  background-image: url(../img/meal5.jpg);
+}
+.rest-three {
+  background-image: url(../img/meal4.jpg);
+}
+.rest-four {
+  background-image: url(../img/meal3.jpg);
+}
+.rest-five {
+  background-image: url(../img/meal2.jpg);
+}
+.rest-six {
+  background-image: url(../img/meal1.jpg);
+}
+
+.monuments-caroussel,
+.restaurants-caroussel,
+.guide-caroussel {
+  display: flex;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.guide {
+  margin-top: 70px;
+  width: 1095px;
+  height: 381px;
+}
+
+.guide-caroussel {
+  width: 1095px;
+  height: 381px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.guide-title {
+  font-family: "TS-Med";
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.5px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.card-guide {
+  width: 355px;
+  height: 380.8px;
+}
+
+.card-guide-header {
+  width: 355px;
+  height: 270px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.guide-one {
+  background-image: url(../img/visit1.jpg);
+}
+.guide-two {
+  background-image: url(../img/visit2.jpg);
+}
+.guide-three {
+  background-image: url(../img/visit3.jpg);
+}
+
+.card-guide-body {
+  width: 355px;
+  height: 57px;
+}
+
+h6.title-guide {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 20px;
+  width: 348px;
+}
+
+p.guide-articles {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card-guide-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60px;
+}
+
+.card-guide-footer img {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  margin-top: 70px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf1ed;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 40px;
+}
+
+.logo-footer img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-footer img:hover {
+  transform: rotate(0.5turn);
+  cursor: help;
+}
+
+.logo-footer p {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.logo-footer a {
+  font-weight: bolder;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.modal {
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+.hidden {
+  display: none;
+}
+.form-container,
+.form-container > div,
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  margin: 0 auto;
+  flex-direction: row;
+}
+.form-container > div {
+  background-color: white;
+  border-radius: 20px;
+  padding: 60px 20px;
+  position: relative;
+}
+.form-container i {
+  color: rgb(0, 0, 0, 0.5);
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.form-container i:hover {
+  color: #000;
+  cursor: pointer;
+}
+.form-container p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+input,
+textarea {
+  width: 60%;
+  margin: 10px 0;
+  outline: 0;
+  border: darkgray 2px solid;
+  padding: 16px 10px;
+  font-size: 16px;
+  font-family: var(--trip-med);
+}
+input[type="submit"] {
+  background-color: darkgreen;
+  color: #fff;
+  width: 200px;
+  padding: 10px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+}
+input[type="submit"]:hover {
+  background-color: mediumseagreen;
+  cursor: pointer;
+}
+input[type="submit"]:focus {
+  outline: darkgreen solid 2px;
+}
+
+.disable {
+  overflow: hidden;
+}
+
+.bordered {
+  border-bottom: lightgray solid 1px;
+}
+
+.modal,
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#close {
+  margin-left: 300px;
+  width: 40px;
+  height: 40px;
 }
